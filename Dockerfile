@@ -2,7 +2,11 @@
 FROM alpine:latest
 
 # set vault version
-ENV VAULT_VERSION 1.12.1
+ENV VAULT_VERSION vault-enterprise:latest
+
+# set Vault License 
+
+ENV VAULT_LICENSE_PATH /.
 
 # create a new directory
 RUN mkdir /vault
